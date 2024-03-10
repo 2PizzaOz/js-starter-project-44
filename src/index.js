@@ -7,7 +7,7 @@ export const brainGames = () => {
   return userName;
 };
 
-export const questionUser = (numberA, operator, numberB) => {
+export const questionUser = (numberA, operator = " ", numberB = " ") => {
   console.log(`Question: ${numberA} ${operator} ${numberB}`);
   const userAnswer = readlineSync.question('Your answer: ');
   return Number(userAnswer);
