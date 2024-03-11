@@ -7,10 +7,16 @@ export const brainGames = () => {
   return userName;
 };
 
-export const questionUser = (numberA, operator = " ", numberB = " ") => {
+export const questionUser = (numberA, operator = ' ', numberB = ' ') => {
   console.log(`Question: ${numberA} ${operator} ${numberB}`);
   const userAnswer = readlineSync.question('Your answer: ');
   return Number(userAnswer);
 };
 
-export const testUser = (user, game) => (user === game) ? true : false;
+export const testUser = (user, game) => user === game ? true : false;
+
+export const questUserYesNo = (numberA) => {
+  console.log(`Question: ${numberA}`);
+  const userYesNo = readlineSync.question('Your answer: ');
+  return userYesNo;
+};

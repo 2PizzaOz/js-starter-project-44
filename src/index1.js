@@ -16,7 +16,7 @@ export function whichNumber() {
     if (userNumber !== question) {
       console.log(`${userNumber} is wrong answer ;(. Correct answer was ${question}.`)
       console.log(`Let's try again, ${userName}`);
-      break;
+      return
     }
   }
   return console.log(`Congratulations, ${userName}`);

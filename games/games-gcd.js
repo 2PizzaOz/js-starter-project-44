@@ -1,6 +1,6 @@
 import { brainGames, questionUser, testUser } from '../src/index.js';
 
-export const gameNod = () => {
+const gameNod = () => {
   const userName = brainGames();
   console.log('Find the greatest common divisor of given numbers.');
   for (let y = 0; y < 3; y += 1) {
@@ -40,3 +40,4 @@ export const gameNod = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+export default gameNod();

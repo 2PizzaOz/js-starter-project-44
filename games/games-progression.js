@@ -1,6 +1,6 @@
 import { brainGames, questionUser, testUser } from '../src/index.js';
 
-export const gameProgression = () => {
+const gameProgression = () => {
   const userName = brainGames();
   console.log('What number is missing in the progression?');
   for (let y = 0; y < 3; y += 1) {
@@ -35,3 +35,4 @@ export const gameProgression = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+export default gameProgression();

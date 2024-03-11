@@ -1,6 +1,6 @@
 import { questionUser, testUser, brainGames } from '../src/index.js';
 
-export function calc() {
+function calc() {
   const userName = brainGames();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
@@ -20,6 +20,7 @@ export function calc() {
       case '+': result = numberA + numberB; break;
       case '-': result = numberA - numberB; break;
       case '*': result = numberA * numberB; break;
+      default:
     }
 
     const userAnswer = questionUser(numberA, operator, numberB);
@@ -34,5 +35,6 @@ export function calc() {
       return;
     }
   }
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }
+export default calc();
