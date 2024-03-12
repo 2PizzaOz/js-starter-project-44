@@ -16,7 +16,7 @@ const gameNod = () => {
     if (number1 > number2) {
       smallNumber = number2;
     }
-    const userAnswer = questionUser(number1, operator, number2);
+    const userAnswer = questionUser(number1, number2);
     let largerDivider;
     for (let i = smallNumber; i > 0; i -= 1) {
       const result = (smallNumber / i);
