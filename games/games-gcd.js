@@ -4,26 +4,26 @@ const gameNod = () => {
   const userName = brainGames();
   console.log('Find the greatest common divisor of given numbers.');
   for (let y = 0; y < 3; y += 1) {
-    let numberA = Math.random() * 20;
-    numberA = Math.ceil(numberA);
-    let numberB = Math.random() * 20;
-    numberB = Math.ceil(numberB);
+    let number1 = Math.random() * 20;
+    number1 = Math.ceil(number1);
+    let number2 = Math.random() * 20;
+    number2 = Math.ceil(number2);
     const operator = '';
     let smallNumber;
-    if (numberA <= numberB) {
-      smallNumber = numberA;
+    if (number1 <= number2) {
+      smallNumber = number1;
     }
-    if (numberA > numberB) {
-      smallNumber = numberB;
+    if (number1 > number2) {
+      smallNumber = number2;
     }
-    const userAnswer = questionUser(numberA, operator, numberB);
+    const userAnswer = questionUser(number1, operator, number2);
     let largerDivider;
     for (let i = smallNumber; i > 0; i -= 1) {
       const result = (smallNumber / i);
       if (Number.isInteger(result) === true) {
         largerDivider = i;
       }
-      if (numberA % largerDivider === 0 && numberB % largerDivider === 0) {
+      if (number1 % largerDivider === 0 && number2 % largerDivider === 0) {
         break;
       }
     }
@@ -31,7 +31,7 @@ const gameNod = () => {
       console.log('Correct!');
     }
     if (testUser(userAnswer, largerDivider) === false) {
-      console.log(`Question: ${numberA} ${numberB}`);
+      console.log(`Question: ${number1} ${number2}`);
       console.log(`Your answer: ${userAnswer}`);
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${largerDivider}.`);
       console.log(`Let's try again, ${userName}!`);
