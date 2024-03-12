@@ -29,7 +29,7 @@ const gameProgression = () => {
       console.log(`Question: ${gameAnswer}`);
       console.log(`Your answer: ${userAnswer}`);
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${temp}.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }

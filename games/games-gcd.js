@@ -34,7 +34,7 @@ const gameNod = () => {
       console.log(`Question: ${numberA} ${numberB}`);
       console.log(`Your answer: ${userAnswer}`);
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${largerDivider}.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }

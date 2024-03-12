@@ -27,7 +27,7 @@ const gamePrime = () => {
     if (testUser(userYesNo, result) === false) {
       console.log(`Question: ${numberA}`);
       console.log(`${userYesNo} is wrong answer ;(. Correct answer was ${result}.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }

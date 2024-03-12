@@ -13,7 +13,7 @@ function whichNumber() {
     }
     if (userYesNo !== question) {
       console.log(`${userYesNo} is wrong answer ;(. Correct answer was ${question}.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
