@@ -17,6 +17,6 @@ function whichNumber() {
       return;
     }
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 }
 export default whichNumber();
