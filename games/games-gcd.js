@@ -8,7 +8,6 @@ const gameNod = () => {
     number1 = Math.ceil(number1);
     let number2 = Math.random() * 20;
     number2 = Math.ceil(number2);
-    const operator = '';
     let smallNumber;
     if (number1 <= number2) {
       smallNumber = number1;

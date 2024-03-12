@@ -13,7 +13,15 @@ export const questionUser = (numberA, operator = ' ', numberB = ' ') => {
   return Number(userAnswer);
 };
 
-export const testUser = (user, game) => user === game ? true : false;
+export const testUser = (user, game) => {
+  if (user === game) {
+    return true;
+  }
+  if (user !== game) {
+    return false;
+  }
+  return testUser();
+};
 
 export const questUserYesNo = (numberA) => {
   console.log(`Question: ${numberA}`);

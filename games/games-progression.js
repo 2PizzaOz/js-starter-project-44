@@ -11,8 +11,8 @@ const gameProgression = () => {
     const empty = [];
     const AreGame = [];
     const Aree = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (const areNumb of Aree) {
-      const result = areNumb * numberA;
+    for (let x = 0; x < Aree.length; x += 1) {
+      const result = Aree[x] * numberA;
       AreGame.push(result);
     }
     const randomNumb = '..';
